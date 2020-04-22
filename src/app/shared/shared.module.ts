@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { ModalComponent } from './component/modal/modal.component';
 import { SanitizeHtmlPipe } from './pipes/sanitize-html.pipe';
@@ -10,8 +10,14 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
-
-
+import { NotificationModule } from '@progress/kendo-angular-notification';
+import { HttpClientModule } from '@angular/common/http';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InputsModule } from '@progress/kendo-angular-inputs';
+import { DialogsModule } from '@progress/kendo-angular-dialog';
+import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -27,9 +33,15 @@ import { SchedulerModule } from '@progress/kendo-angular-scheduler';
     ButtonsModule,
     GridModule,
     ChartsModule,
-    SchedulerModule
-    // CKEditorModule,
-    // NotificationModule
+    SchedulerModule,
+    BrowserAnimationsModule,
+    InputsModule,
+    DialogsModule,
+    NotificationModule,
+    DateInputsModule,
+    HttpClientModule,
+    FormsModule,
+    TranslateModule
   ],
   exports : [
     SanitizeHtmlPipe,
@@ -43,4 +55,11 @@ import { SchedulerModule } from '@progress/kendo-angular-scheduler';
     DatePipe,
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+  static forRoot(): ModuleWithProviders<SharedModule> {
+    return {
+      ngModule: SharedModule,
+      providers: []
+    };
+  }
+ }
