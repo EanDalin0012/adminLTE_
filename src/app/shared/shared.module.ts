@@ -11,7 +11,7 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { NotificationModule } from '@progress/kendo-angular-notification';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputsModule } from '@progress/kendo-angular-inputs';
@@ -41,7 +41,8 @@ import { TranslateModule } from '@ngx-translate/core';
     DateInputsModule,
     HttpClientModule,
     FormsModule,
-    TranslateModule
+    TranslateModule,
+    HttpClientJsonpModule,
   ],
   exports : [
     SanitizeHtmlPipe,
@@ -55,10 +56,10 @@ import { TranslateModule } from '@ngx-translate/core';
     DatePipe,
   ]
 })
-export class SharedModule {
-  static forRoot(): ModuleWithProviders<SharedModule> {
+export class SBSharedModule {
+  static forRoot(): ModuleWithProviders<SBSharedModule> {
     return {
-      ngModule: SharedModule,
+      ngModule: SBSharedModule,
       providers: []
     };
   }

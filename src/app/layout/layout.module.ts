@@ -22,5 +22,5 @@ import {SettingsComponent} from './settings/settings.component';
     SettingsComponent
   ]
 })
-export class LayoutModule {
+export class MLayoutModule {
 }
