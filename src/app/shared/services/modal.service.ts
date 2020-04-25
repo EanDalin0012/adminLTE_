@@ -3,12 +3,12 @@ import { DialogService, DialogRef, DialogCloseResult } from '@progress/kendo-ang
 
 
 import * as $ from 'jquery';
-import { SBSharedModule } from '../shared.module';
 import { NotificationService } from '@progress/kendo-angular-notification';
 import { Store } from '../Class/class-store';
 import { MODAL_STORE_KEY } from '../constants/common.const';
 import { ModalDataService } from '../component/modal.service';
 import { ModalComponent } from '../component/modal/modal.component';
+import { SBSharedModule } from '../sbshare.module';
 
 @Injectable({
   providedIn: SBSharedModule

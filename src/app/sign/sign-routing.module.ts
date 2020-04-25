@@ -3,8 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Sign1000Component } from './sign1000/sign1000.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
-    { path: 'login', component: Sign1000Component},
+    { path: '', component: Sign1000Component},
 ];
 
 @NgModule({

@@ -8,11 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutBlankComponent } from './layout/layout-blank/layout-blank.component';
 import { HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { SBSharedModule } from './shared/shared.module';
+import { SBSharedModule } from './shared/sbshare.module';
 import { MLayoutModule } from './layout/layout.module';
 import { PagesComponent } from './pages/pages.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');

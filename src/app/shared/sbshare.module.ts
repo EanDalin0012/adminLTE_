@@ -12,7 +12,7 @@ import { ChartsModule } from '@progress/kendo-angular-charts';
 import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
-import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { DateInputsModule, CalendarModule } from '@progress/kendo-angular-dateinputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { DialogsModule } from '@progress/kendo-angular-dialog';
@@ -39,6 +39,7 @@ import { TranslateModule } from '@ngx-translate/core';
     DialogsModule,
     NotificationModule,
     DateInputsModule,
+    CalendarModule,
     HttpClientModule,
     FormsModule,
     TranslateModule,
@@ -57,7 +58,7 @@ import { TranslateModule } from '@ngx-translate/core';
   ]
 })
 export class SBSharedModule {
-  static forRoot(): ModuleWithProviders<SBSharedModule> {
+  static forRoot(): ModuleWithProviders {
     return {
       ngModule: SBSharedModule,
       providers: []
