@@ -13,11 +13,12 @@ import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { DateInputsModule, CalendarModule } from '@progress/kendo-angular-dateinputs';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputsModule } from '@progress/kendo-angular-inputs';
-import { DialogsModule } from '@progress/kendo-angular-dialog';
-import { FormsModule } from '@angular/forms';
+import { DialogsModule, DialogModule } from '@progress/kendo-angular-dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { LayoutModule } from '@progress/kendo-angular-layout';
+import { DropDownsModule, SharedModule } from '@progress/kendo-angular-dropdowns';
 
 @NgModule({
   declarations: [
@@ -27,25 +28,21 @@ import { TranslateModule } from '@ngx-translate/core';
   AmountFormatPipe
 ],
   imports: [
-    CommonModule,
-    PDFExportModule,
-    SortableModule,
-    ButtonsModule,
-    GridModule,
-    ChartsModule,
-    SchedulerModule,
-    BrowserAnimationsModule,
-    InputsModule,
-    DialogsModule,
-    NotificationModule,
-    DateInputsModule,
-    CalendarModule,
-    HttpClientModule,
-    FormsModule,
-    TranslateModule,
-    HttpClientJsonpModule,
+    CommonModule
   ],
   exports : [
+    CommonModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    TranslateModule,
+    DialogModule,
+    GridModule,
+    LayoutModule,
+    SharedModule,
+    SortableModule,
+    DateInputsModule,
+    DropDownsModule,
     SanitizeHtmlPipe,
     DateFormatePipe,
     AmountFormatPipe

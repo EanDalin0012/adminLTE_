@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@progress/kendo-angular-layout';
-import { NotificationModule } from '@progress/kendo-angular-notification';
 import 'hammerjs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,12 +25,8 @@ export function createTranslateLoader(http: HttpClient) {
     PagesComponent
   ],
   imports: [
-    MLayoutModule,
-    BrowserModule,
     AppRoutingModule,
-    LayoutModule,
-    BrowserAnimationsModule,
-    NotificationModule,
+    MLayoutModule,
     SBSharedModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
@@ -41,6 +35,8 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       },
     }),
+    BrowserAnimationsModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
