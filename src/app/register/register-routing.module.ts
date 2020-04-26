@@ -5,13 +5,24 @@ import { Register2000Component } from './register2000/register2000.component';
 import { Register3000Component } from './register3000/register3000.component';
 import { Register4000Component } from './register4000/register4000.component';
 import { Register5000Component } from './register5000/register5000.component';
+import { Register6000Component } from './register6000/register6000.component';
+import { Register7000Component } from './register7000/register7000.component';
+import { Register8000Component } from './register8000/register8000.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'tab', pathMatch: 'full' },
-    { path: 'main-category',  component: Register2000Component},
     { path: 'sub-category',   component: Register1000Component},
+    { path: 'main-category',  component: Register2000Component},
     { path: 'company',        component: Register3000Component},
     { path: 'proudct',        component: Register4000Component},
+    { path: 'import-product', component: Register5000Component},
+    { path: 'export-product', component: Register6000Component},
+
+    { path: 'order',          component: Register7000Component},
+    { path: 'product-image',  component: Register8000Component},
+
+    { path: 'user',  component: Register8000Component},
+
     { path: 'supplier',       component: Register5000Component},
     { path: 'home',           component: Register1000Component},
   ];
