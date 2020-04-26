@@ -11,7 +11,7 @@ import { Register8000Component } from './register8000/register8000.component';
 import { Register9000Component } from './register9000/register9000.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: 'tab', pathMatch: 'full' },
+    // { path: '', redirectTo: 'tab', pathMatch: 'full' },
     { path: 'sub-category',   component: Register1000Component},
     { path: 'main-category',  component: Register2000Component},
     { path: 'company',        component: Register3000Component},
