@@ -1,7 +1,7 @@
 import { CurrencyCode } from './common.type';
 export enum CHANNEL  {
-    CIB= '01', // Coporate Internet Banking channel
-    MOB= '03' // Mobile Banking channel
+  ADMIN= '01', //
+  WEB= '02',
 }
 
 export enum SERVICE_STATUS_CODE {

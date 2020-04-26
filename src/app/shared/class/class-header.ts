@@ -1,7 +1,6 @@
 
-import { CHANNEL } from '../constants';
-import { LANGUAGE } from '../constants/common.const';
 import { Utils } from '../utils/utils.static';
+import { CHANNEL, LANGUAGE } from '../constants/common.const';
 
 export class Header {
 
