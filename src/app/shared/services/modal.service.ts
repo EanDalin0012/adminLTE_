@@ -3,7 +3,7 @@ import { DialogService, DialogRef, DialogCloseResult } from '@progress/kendo-ang
 
 
 import * as $ from 'jquery';
-import { NotificationService } from '@progress/kendo-angular-notification';
+// import { NotificationService } from '@progress/kendo-angular-notification';
 import { Store } from '../Class/class-store';
 import { MODAL_STORE_KEY } from '../constants/common.const';
 import { ModalDataService } from '../component/modal.service';
@@ -21,7 +21,7 @@ export class ModalService {
   constructor(
     private dialogService: DialogService,
     private modalData: ModalDataService,
-    private notificationService: NotificationService
+    // private notificationService: NotificationService
   ) { }
 
   /**
@@ -226,16 +226,16 @@ export class ModalService {
     });
   }
 
-  showNotificationService() {
-    this.notificationService.show({
-      content: 'Your data has been saved. Time for tea!',
-      cssClass: 'button-notification',
-      animation: { type: 'slide', duration: 400 },
-      position: { horizontal: 'center', vertical: 'bottom' },
-      type: { style: 'success', icon: true },
-      closable: false
-    });
-  }
+  // showNotificationService() {
+  //   this.notificationService.show({
+  //     content: 'Your data has been saved. Time for tea!',
+  //     cssClass: 'button-notification',
+  //     animation: { type: 'slide', duration: 400 },
+  //     position: { horizontal: 'center', vertical: 'bottom' },
+  //     type: { style: 'success', icon: true },
+  //     closable: false
+  //   });
+  // }
 
   closeAllDialog() {
     const modalStore = this.store.get(MODAL_STORE_KEY.MODAL_STORE_KEY) as DialogRef[];

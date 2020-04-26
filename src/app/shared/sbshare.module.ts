@@ -13,7 +13,6 @@ import { SchedulerModule } from '@progress/kendo-angular-scheduler';
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { DateInputsModule, CalendarModule } from '@progress/kendo-angular-dateinputs';
-import { InputsModule } from '@progress/kendo-angular-inputs';
 import { DialogsModule, DialogModule } from '@progress/kendo-angular-dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
@@ -35,14 +34,22 @@ import { DropDownsModule, SharedModule } from '@progress/kendo-angular-dropdowns
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ChartsModule,
     TranslateModule,
     DialogModule,
     GridModule,
     LayoutModule,
     SharedModule,
     SortableModule,
+    PDFExportModule,
     DateInputsModule,
     DropDownsModule,
+    ButtonsModule,
+    SchedulerModule,
+    HttpClientJsonpModule,
+    NotificationModule,
+    CalendarModule,
+    DialogsModule,
     SanitizeHtmlPipe,
     DateFormatePipe,
     AmountFormatPipe
