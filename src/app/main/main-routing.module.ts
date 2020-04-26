@@ -10,13 +10,6 @@ const routes: Routes = [
   },
   { path: '',
     children: [
-      { path: 'dash-board',
-        loadChildren: () => import('../dash-board/dash-board.module').then( m => m.DashBoardModule)
-      }
-    ]
-  },
-  { path: '',
-    children: [
       { path: 'import-product',
         loadChildren: () => import('../import-product/import-product.module').then( m => m.ImportProductModule)
       }

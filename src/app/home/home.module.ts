@@ -7,6 +7,7 @@ import { Home2100Component } from './home2100/home2100.component';
 import { Home2200Component } from './home2200/home2200.component';
 import { Home1200Component } from './home1200/home1200.component';
 import { Home1100Component } from './home1100/home1100.component';
+import { SBSharedModule } from '../shared/sbshare.module';
 
 
 
@@ -22,7 +23,8 @@ import { Home1100Component } from './home1100/home1100.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SBSharedModule
   ]
 })
 export class HomeModule {

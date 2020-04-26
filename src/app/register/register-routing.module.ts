@@ -8,6 +8,7 @@ import { Register5000Component } from './register5000/register5000.component';
 import { Register6000Component } from './register6000/register6000.component';
 import { Register7000Component } from './register7000/register7000.component';
 import { Register8000Component } from './register8000/register8000.component';
+import { Register9000Component } from './register9000/register9000.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'tab', pathMatch: 'full' },
@@ -15,16 +16,10 @@ const routes: Routes = [
     { path: 'main-category',  component: Register2000Component},
     { path: 'company',        component: Register3000Component},
     { path: 'proudct',        component: Register4000Component},
-    { path: 'import-product', component: Register5000Component},
-    { path: 'export-product', component: Register6000Component},
-
-    { path: 'order',          component: Register7000Component},
-    { path: 'product-image',  component: Register8000Component},
-
-    { path: 'user',  component: Register8000Component},
-
     { path: 'supplier',       component: Register5000Component},
-    { path: 'home',           component: Register1000Component},
+    { path: 'order',          component: Register6000Component},
+    { path: 'product-image',  component: Register7000Component},
+    { path: 'user',  component: Register8000Component},
   ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
