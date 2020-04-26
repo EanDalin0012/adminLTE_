@@ -8,14 +8,13 @@ import { ImportProduct1200Component } from './import-product1200/import-product1
 
 @NgModule({
   declarations: [
-    ImportProduct1000Component
+    ImportProduct1000Component,
+    ImportProduct1100Component,
   ],
   imports: [
     CommonModule,
   ],
   entryComponents: [
-    ImportProduct1000Component,
-    ImportProduct1100Component,
     ImportProduct1200Component
   ]
 })
