@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { CountryData } from './data';
+import { CountryData, Country } from './data';
 import { DataService } from 'src/app/shared/services/data.service';
 import { DropDownFilterSettings } from '@progress/kendo-angular-dropdowns';
-import { Country } from 'src/app/dash-board/dash-board1000/data';
 
 @Component({
   selector: 'app-home1000',

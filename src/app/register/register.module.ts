@@ -31,6 +31,7 @@ import { Register9200Component } from './register9200/register9200.component';
 import { Register10000Component } from './register10000/register10000.component';
 import { Register11000Component } from './register11000/register11000.component';
 import { Register12000Component } from './register12000/register12000.component';
+import { SBSharedModule } from '../shared/sbshare.module';
 
 
 
@@ -78,7 +79,8 @@ import { Register12000Component } from './register12000/register12000.component'
   ],
   imports: [
     CommonModule,
-    RegisterRoutingModule
+    RegisterRoutingModule,
+    SBSharedModule
   ],
   entryComponents: [
     Register1100Component,
