@@ -1,17 +1,17 @@
+import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import 'hammerjs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutBlankComponent } from './layout/layout-blank/layout-blank.component';
-import { HttpClient } from '@angular/common/http';
-
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { SBSharedModule } from './shared/sbshare.module';
 import { MLayoutModule } from './layout/layout.module';
 import { PagesComponent } from './pages/pages.component';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { SBSharedModule } from './shared/sbshare.module';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -22,7 +22,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     LayoutBlankComponent,
-    PagesComponent,
+    PagesComponent
   ],
   imports: [
     AppRoutingModule,
