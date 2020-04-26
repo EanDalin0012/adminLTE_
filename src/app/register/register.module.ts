@@ -96,6 +96,18 @@ import { Register12000Component } from './register12000/register12000.component'
     Register5100Component,
     Register5200Component,
 
+    Register6100Component,
+    Register6200Component,
+
+    Register7100Component,
+    Register7200Component,
+
+    Register8100Component,
+    Register8200Component,
+
+    Register9100Component,
+    Register9200Component,
+
     Register11000Component,
     Register12000Component
 
